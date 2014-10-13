@@ -10,7 +10,7 @@ unique_finder.next.data != current_num.  Once it does dup_finder.next is set to 
 
 Since duplicates are removed as current_node iterates forward, there is no need to make multiple passes
 '''
-import copy
+import copy # use to create deep copies for easier debugging
 
 class Node:
     def __init__(self):
@@ -43,7 +43,7 @@ class Linked_list:
         while current_node != None:
             current_num = current_node.data
             dup_finder = current_node
-            while dup_finder != None and dup_finder.next != None: 
+            while dup_finder != None and dup_finder.next != None: # need to find a better 
                 if dup_finder.next.data == current_num:  # if the next is a duplicate
                     unique_finder = dup_finder.next  # set a pointer to the next node
                     while unique_finder.next != None and unique_finder.next.data == current_num:
