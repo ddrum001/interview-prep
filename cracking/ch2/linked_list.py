@@ -25,3 +25,4 @@ class Linked_list:
             print node.data,
             node = node.next
         print
+
