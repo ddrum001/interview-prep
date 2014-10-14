@@ -47,7 +47,7 @@ class Linked_list:
         first_greater_node = self.first_node
         while cur_node != None: # until at the end
             if cur_node.data < x:   
-                cur_node.data, first_greater_node.data = first_greater_node.data, cur_node.data
+                cur_node.data, first_greater_node.data = first_greater_node.data, cur_node.data # swap the data
                 first_greater_node = first_greater_node.next    # step forward the first greater node
             cur_node = cur_node.next    # step forward current step
         return None
