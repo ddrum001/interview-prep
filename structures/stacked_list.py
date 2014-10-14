@@ -33,7 +33,7 @@ class StackedList:
         print
 
 # test the stack
-
+'''
 s1 = StackedList()
 s1.push(3)
 s1.push(2)
@@ -44,4 +44,4 @@ s1.stack_print()    # should print 23
 print s1.peek() # should print 2
 s1.push(4)
 s1.stack_print()    # should print 423
-
+'''
