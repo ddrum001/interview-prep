@@ -5,9 +5,9 @@ class Node:
         self.data = None # contains the data
         self.next = None # contains the reference to the next node
 
-class Linked_list:
+class LinkedList:
     def __init__(self):
-        self.last_node = None
+        self.last_node = None   # use last_node for constant time insertions
         self.first_node = None
 
     def add_node(self, data):
@@ -21,7 +21,10 @@ class Linked_list:
 
     def list_print(self):
         node = self.first_node # starting at the beginning
-        while node:
+        count = 0
+        while node and count < 30:  # count included to terminate cycles
             print node.data,
             node = node.next
+            count += 1
         print
+

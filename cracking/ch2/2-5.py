@@ -10,12 +10,12 @@ for simplicity we assume they're stored in reverse order
     
 '''
 
-from linked_list import Node, Linked_list
+from linked_list import Node, LinkedList
 
 def add_ll(ll1, ll2):
     cur_node1 = ll1.first_node
     cur_node2 = ll2.first_node
-    result = Linked_list()  # used to hold answer without modifying existing ll
+    result = LinkedList()  # used to hold answer without modifying existing ll
                             # alternatively could replace both ll as we iterate
     digit_sum = 0   # used to hold sums for the carry
     while cur_node1 != None or cur_node2 != None:  # while both aren't at the end
@@ -31,18 +31,18 @@ def add_ll(ll1, ll2):
         
 # test case
 
-ll1 = Linked_list()
+ll1 = LinkedList()
 ll1.add_node(7)
 ll1.add_node(1)
 ll1.add_node(6)
 ll1.add_node(1)
 
-ll2 = Linked_list()
+ll2 = LinkedList()
 ll2.add_node(5)
 ll2.add_node(9)
 ll2.add_node(2)
 
-ll3 = Linked_list()
+ll3 = LinkedList()
 
 ll1.list_print()
 ll2.list_print()
